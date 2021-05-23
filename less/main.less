@@ -1,0 +1,30 @@
+@import "variables";
+
+body{
+    font-family: @font;
+}
+
+.navbar{
+    height: @height;
+    background-color: @color-accent;
+    ul {
+        color: @color-text;
+        li {
+            text-transform: uppercase;
+            font-size: @Heading-font-size;
+            font-weight: @Heading-font-weight;
+            span{
+                color: @color-text-accent;
+                text-transform: uppercase;
+                font-size: @Heading-font-size;
+                font-weight: @Heading-font-weight;
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: @color-text;
+    height: @height;
+}
