@@ -4,6 +4,12 @@ body{
     font-family: @font;
 }
 
+.image{
+    position: relative;
+    width: 100%;
+}
+
+
 .navbar{
     height: @height;
     background-color: @color-accent;
@@ -11,20 +17,68 @@ body{
         color: @color-text;
         li {
             text-transform: uppercase;
-            font-size: @Heading-font-size;
-            font-weight: @Heading-font-weight;
             span{
                 color: @color-text-accent;
                 text-transform: uppercase;
-                font-size: @Heading-font-size;
-                font-weight: @Heading-font-weight;
             }
         }
     }
 }
 
+.first-text{
+    .row{
+        padding: 3% 0;
+        .col-8{
+            H2{
+                .heading();
+                span{
+                     color: @color-text-accent;
+                     text-transform: uppercase;
+                }
+            }
+
+            p {
+                .text();
+            }
+        }
+
+    }
+}
+
+
+
+.second-text{
+    background-color: @color-primary;
+    .container{
+        .row{
+            padding: 3% 0;
+            .col-7{
+                H2{
+                    .heading();
+                    span{
+                        color: @color-text-accent;
+                        text-transform: uppercase;
+                    }
+                }
+
+                p {
+                    .text();
+                }
+            }
+        }
+
+    }
+}
+
+.yellowline{
+    background-color: @color-accent;
+    height: 10px;
+}
 
 footer {
     background-color: @color-text;
-    height: @height;
+    height: 120px;
+    .footer-logo{
+        padding: 1% 0;
+    }
 }
