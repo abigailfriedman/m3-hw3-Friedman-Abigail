@@ -9,8 +9,8 @@ body{
     background-image: url("../img/banner-bg-withoverlay.png");
     background-position: 100%;
     .row {
-        .col-4{
-            margin: 10% auto;
+        .col-5{
+            margin: 6% auto 8%;
             min-width: 320px;
             .col-6{
                 margin: 5% auto;
@@ -23,10 +23,13 @@ body{
 .navbar{
     height: @height;
     background-color: @color-accent;
+    width: 100%;
     ul {
         color: @color-text;
+        min-width: 500px;
         li {
-            text-transform: uppercase;
+            .text-links();
+            padding: 1%;
             span{
                 color: @color-text-accent;
                 text-transform: uppercase;
@@ -97,8 +100,8 @@ body{
 
 footer {
     background-color: @color-text;
-    height: 120px;
+    height: 150px;
     .footer-logo{
-        padding: 1% 0;
+        margin: 1% auto;
     }
 }
